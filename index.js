@@ -5,7 +5,7 @@ function controllaNumero(numero1, numero2) {
     return numero1 === 50 || numero2 === 50 || numero1 + numero2 === 50;
 }
 
-//console.log(controllaNumero(25, 50)); // Restituirà true perché uno dei numeri è 50
+console.log(controllaNumero(25, 50)); // Restituirà true perché uno dei numeri è 50
 //console.log(controllaNumero(20, 30)); // Restituirà true perché la somma è 50
 //console.log(controllaNumero(10, 15)); // Restituirà false perché nessuna delle condizioni è soddisfatta
 
@@ -28,7 +28,7 @@ function rimuoviCaratterePosizione(stringa, posizione) {
     return arrayCaratteri.join('');
 }
 
-// Esempio di utilizzo:
+
 let stringaOriginale = "Ciao!";
 let nuovaStringa = rimuoviCaratterePosizione(stringaOriginale, 7);
 console.log(nuovaStringa); // Stampa "Ciao!" rimuovendo il carattere alla posizione 7
@@ -44,11 +44,11 @@ function controllaIntervalli(numero1, numero2) {
     return condizione1 || condizione2;
 }
 
-// Esempi di utilizzo:
+
 console.log(controllaIntervalli(45, 55)); // Restituirà true perché entrambi i numeri sono tra 40 e 60
-console.log(controllaIntervalli(80, 90)); // Restituirà true perché entrambi i numeri sono tra 70 e 100
-console.log(controllaIntervalli(30, 50)); // Restituirà false perché il primo numero non è compreso tra 40 e 60
-console.log(controllaIntervalli(75, 110)); // Restituirà false perché il secondo numero non è compreso tra 70 e 100
+//console.log(controllaIntervalli(80, 90)); // Restituirà true perché entrambi i numeri sono tra 70 e 100
+//console.log(controllaIntervalli(30, 50)); // Restituirà false perché il primo numero non è compreso tra 40 e 60
+//console.log(controllaIntervalli(75, 110)); // Restituirà false perché il secondo numero non è compreso tra 70 e 100
 
 
 //Es.4 Crea una funzione che accetti un nome di città come parametro e ritorni il nome stesso se inizia con "Los" o "New", altrimenti ritorni "false".
@@ -65,10 +65,10 @@ function verificaNomeCitta(nomeCitta) {
     }
 }
 
-// Esempi di utilizzo:
+
 console.log(verificaNomeCitta("Los Angeles")); // Restituirà "Los Angeles" perché inizia con "Los"
-console.log(verificaNomeCitta("New York")); // Restituirà "New York" perché inizia con "New"
-console.log(verificaNomeCitta("San Francisco")); // Restituirà false perché non inizia né con "Los" né con "New"
+//console.log(verificaNomeCitta("New York")); // Restituirà "New York" perché inizia con "New"
+//console.log(verificaNomeCitta("San Francisco")); // Restituirà false perché non inizia né con "Los" né con "New"
 
 
 //Es.5 Crea una funzione che calcoli e ritorni la somma di tutti gli elementi di un array. L'array deve essere passato come parametro.
@@ -86,15 +86,15 @@ function sommaArray(array) {
     return somma;
 }
 
-// Esempi di utilizzo:
+
 const array1 = [1, 2, 3, 4, 5];
 console.log(sommaArray(array1)); // Restituirà 15 (1 + 2 + 3 + 4 + 5)
 
-const array2 = [10, -5, 8, 2];
-console.log(sommaArray(array2)); // Restituirà 15 (10 + (-5) + 8 + 2)
+//const array2 = [10, -5, 8, 2];
+//console.log(sommaArray(array2)); // Restituirà 15 (10 + (-5) + 8 + 2)
 
-const arrayVuoto = [];
-console.log(sommaArray(arrayVuoto)); // Stampa "L'array è vuoto." e restituirà 0
+//const arrayVuoto = [];
+//console.log(sommaArray(arrayVuoto)); // Stampa "L'array è vuoto." e restituirà 0
 
 //Es.6 Crea una funzione che controlli che un array NON contenga i numeri 1 o 3. Se NON li contiene, ritorna "true", altrimenti ritorna "false".
 
@@ -107,15 +107,15 @@ function verificaArraySenzaUnoTre(array) {
     return !contieneUnoTre;
 }
 
-// Esempi di utilizzo:
+
 const arrayUno = [2, 4, 6, 8];
 console.log(verificaArraySenzaUnoTre(arrayUno)); // Restituirà true perché l'array non contiene né 1 né 3
 
-const arrayDue = [1, 5, 7, 9];
-console.log(verificaArraySenzaUnoTre(arrayDue)); // Restituirà false perché l'array contiene il numero 1
+//const arrayDue = [1, 5, 7, 9];
+//console.log(verificaArraySenzaUnoTre(arrayDue)); // Restituirà false perché l'array contiene il numero 1
 
-const arraytre = [2, 3, 6, 8];
-console.log(verificaArraySenzaUnoTre(arrayTre)); // Restituirà false perché l'array contiene il numero 3
+//const arraytre = [2, 3, 6, 8];
+//console.log(verificaArraySenzaUnoTre(arrayTre)); // Restituirà false perché l'array contiene il numero 3
 
 //Es. 7 Crea una funzione per trovare il tipo di un angolo i cui gradi sono passati come parametro.
 // Angolo acuto: meno di 90° -> ritorna "acuto"
@@ -143,12 +143,12 @@ function tipoAngolo(gradi) {
     }
 }
 
-// Esempi di utilizzo:
+
 console.log(tipoAngolo(45)); // Restituirà "acuto"
-console.log(tipoAngolo(90)); // Restituirà "retto"
-console.log(tipoAngolo(120)); // Restituirà "ottuso"
-console.log(tipoAngolo(180)); // Restituirà "piatto"
-console.log(tipoAngolo(270)); // Stampa "L'angolo è maggiore di 180 gradi." e restituirà undefined
+//console.log(tipoAngolo(90)); // Restituirà "retto"
+//console.log(tipoAngolo(120)); // Restituirà "ottuso"
+//console.log(tipoAngolo(180)); // Restituirà "piatto"
+//console.log(tipoAngolo(270)); // Stampa "L'angolo è maggiore di 180 gradi." e restituirà undefined
 
 
 // Es.8 Crea una funzione che crei un acronimo a partire da una frase. Es. "Fabbrica Italiana Automobili Torino" deve ritornare "FIAT"
@@ -162,6 +162,6 @@ function creaAcronimo(frase) {
     return acronimo;
 }
 
-// Esempio di utilizzo:
+
 const fraseEsempio = "Fabbrica Italiana Automobili Torino";
 console.log(creaAcronimo(fraseEsempio)); // Restituirà "FIAT"
